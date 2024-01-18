@@ -54,7 +54,7 @@ return require('packer').startup(function(use)
     use { "github/copilot.vim"}
     use { "f-person/git-blame.nvim"}
     use { "rebelot/kanagawa.nvim"}
-
+    use("tpope/vim-fugitive")
 
 
 

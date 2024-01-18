@@ -3,8 +3,5 @@
 
 - understand lsp 
 - handle lsp well
-- gitblame ? ensure it works
-
-
 
 
