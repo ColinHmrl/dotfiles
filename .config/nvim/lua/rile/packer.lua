@@ -7,18 +7,12 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
-    } 
-
-
+    }
     use 'ggandor/leap.nvim'
-
-
-
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -52,17 +46,16 @@ return require('packer').startup(function(use)
             })
         end
     }
-
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
+    use { "github/copilot.vim"}
+    use { "f-person/git-blame.nvim"}
+    use { "rebelot/kanagawa.nvim"}
 
 
 
 
-    use {
-        "f-person/git-blame.nvim"
-    }
 end)

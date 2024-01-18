@@ -3,5 +3,8 @@
 
 - understand lsp 
 - handle lsp well
-- github copilot or similar :)
+- gitblame ? ensure it works
+
+
+
 
