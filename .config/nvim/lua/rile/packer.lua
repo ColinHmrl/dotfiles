@@ -8,7 +8,15 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use 'ggandor/leap.nvim'
+    --use 'ggandor/leap.nvim'
+    use {
+        'phaazon/hop.nvim',
+        branch = 'v2', -- optional but strongly recommended
+        config = function()
+            -- you can configure Hop the way you like here; see :h hop-config
+            require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+        end
+    }
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
@@ -30,22 +38,34 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
+
+
+
+
+
     use {
         'numToStr/Comment.nvim',
+        branch = "jsx",
         config = function()
             require('Comment').setup({
                 ignore = '^$',
-                toggler = {
-                    line = '<leader>cc',
-                    block = '<leader>bc',
-                },
-                opleader = {
-                    line = '<leader>c',
-                    block = '<leader>b',
-                },
+                -- toggler = {
+                   -- line = '<leader>l',
+                   -- block = '<leader>b',
+                -- },
+                -- opleader = {
+                --     line = '<leader>c',
+                --     block = '<leader>b',
+                -- },
+
+                -- pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
             })
         end
+
     }
+
+
+
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
@@ -54,7 +74,25 @@ return require('packer').startup(function(use)
     use { "github/copilot.vim"}
     use { "f-person/git-blame.nvim"}
     use { "rebelot/kanagawa.nvim"}
-    use("tpope/vim-fugitive")
+    use { "tpope/vim-fugitive"}
+    use { "nvim-telescope/telescope-project.nvim" }
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
+
+    use { "nvim-tree/nvim-web-devicons" }
+
+    use { "jiangmiao/auto-pairs"}
+    use {
+        "askfiy/visual_studio_code",
+        config = function()
+            vim.cmd([[colorscheme visual_studio_code]])
+        end,
+    }
+
 
 
 
