@@ -12,12 +12,13 @@
 - [x]Ouvrir les projets avec git récents: telescope projects <leader>r 
     - [ ] Ouvrir un projet ouvre automatiquement le fichier readme.md du projet
 
-- [ ] commentaire une et multiple ligne
+- [-] commentaire une et multiple ligne
 - [x] parenthese accollade et crochet automatique, quote et double quote aussi
 - [x] trouver les bindings parfaits pour toutes les commandes, souhait d'utiliser la leader key, ce qui parrait beaucoup plus sympa
-- [ ] lsp cmp doit pas s'ouvrir sans le c-space
-- [ ] nvim-tree, modifier les icones de merdes qui sont pas clair sur leur objectif/role 
+- [?] lsp cmp doit pas s'ouvrir sans le c-space
+- [x] nvim-tree, modifier les icones de merdes qui sont pas clair sur leur objectif/role 
 
+- [] clipboard linked to the system, could be nice :)
 
 
 

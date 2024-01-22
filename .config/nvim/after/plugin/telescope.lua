@@ -16,7 +16,7 @@ require('telescope').setup {
                 -- { '~/dev/src2' },
                 -- { '~/dev/src3',        max_depth = 4 },
                 -- { path = '~/dev/src4' },
-                { path = '~/Documents/git', max_depth = 3 },
+                { path = '~/Documents', max_depth = 4 },
             },
             hidden_files = true, -- default: false
             theme = "dropdown",
