@@ -92,7 +92,7 @@ return require('packer').startup(function(use)
             vim.cmd([[colorscheme visual_studio_code]])
         end,
     }
-
+    --use {'norcalli/nvim-colorizer.lua'}
 
 
 

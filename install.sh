@@ -4,13 +4,20 @@
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Create a symlink for nvim configuration
-ln -s "$DOTFILES_DIR/.config/nvim" ~/.config/nvim
+ln -s "$DOTFILES_DIR/.config/nvim" ~/.config/
+# autostart
+ln -s "$DOTFILES_DIR/.config/autostart" ~/.config/
+# polybar
+ln -s "$DOTFILES_DIR/.config/polybar" ~/.config/
 
-# Install Packer
-git clone ——depth 1 https://github.com/wbthomason/packer.nvim\
-~/.local/share/nvim/Site/pack/packer/start/packer.nvim
 
 
-# open packer to :so and :PackerSync
-nvim .config/nvim/lua/rile/packer.lua   
+
+
+# # Install Packer
+# git clone ——depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/Site/pack/packer/start/packer.nvim
+
+
+# # open packer to :so and :PackerSync
+# nvim .config/nvim/lua/rile/packer.lua   
 

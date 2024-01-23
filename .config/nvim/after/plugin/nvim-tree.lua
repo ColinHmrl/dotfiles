@@ -23,7 +23,6 @@ local function my_on_attach(bufnr)
     vim.keymap.set('n', '<CR>',    function()
         api.node.open.edit()
         
-        print(vim.inspect(api.tree.get_node_under_cursor()))
         local node = api.tree.get_node_under_cursor()
         --if node type different from directory the api.tree.close()
         if node.type ~= 'directory' then
@@ -57,8 +56,12 @@ require("nvim-tree").setup {
     ---
     -- make root directory changeable 
     update_cwd = true,
-}
 
+    filters = {
+        dotfiles = false,
+        git_ignored = false,
+    }    
+}
 
 
 vim.keymap.set('n', '<leader>e', function()

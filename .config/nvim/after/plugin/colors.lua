@@ -1,2 +1,2 @@
 --vim.cmd("colorscheme kanagawa")
-
+-- require("colorizer").setup()
