@@ -1,0 +1,274 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        //past
+        "key": "ctrl+v",
+        "command": "workbench.action.terminal.paste",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        //unbind old past
+        "key": "ctrl+shift+v",
+        "command": "-workbench.action.terminal.paste",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        //copy
+        "key": "ctrl+c",
+        "command": "workbench.action.terminal.ySelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        //unbind old copy
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.ySelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        // comment Line
+        "key": "ctrl+[Period]",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        // unbind old comment line
+        "key": "ctrl+shift+[Period]",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        //console open
+        "key": "ctrl+[Quote]",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        //unbind console open
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        // jump to with jump-extension
+        "key": "ctrl+j", //jump
+        "command": "jump-extension.jump-to-the-start-of-a-word",
+        "when": "editorTextFocus"
+    },
+    {
+        //unbind
+        "key": "alt+q alt+w",
+        "command": "-jump-extension.jump-to-the-end-of-a-word",
+        "when": "editorTextFocus"
+    },
+    {
+        //unbind ctrl+e as ctrl+p is used for quick open
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        // quick mooooove and select
+        "key": "ctrl+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 5
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 5
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 5,
+            "select": true
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 5,
+            "select": true
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        // insert line after
+        "key": "ctrl+o",
+        "command": "editor.action.insertLineAfter"
+    },
+    {
+        // insert line before
+        "key": "ctrl+shift+o",
+        "command": "editor.action.insertLineBefore"
+    },
+
+    {
+        // delete line
+        "key": "ctrl+shift+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        //unbind for old line delete
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    //Binds for menu interactions
+    {
+        //unbinds
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+
+    {
+        // open
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        // close
+        "key": "ctrl+e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "viewContainer.workbench.view.explorer.enabled &&  explorerViewletVisible"
+    },
+
+    {
+        //open file in explorer and close explorer
+        "key": "enter",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "explorer.openAndPassFocus",
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+
+    {
+        // shifting selected text to sides
+        "key": "alt+right",
+        "command": "editor.action.moveCarretRightAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    {
+        "key": "alt+left",
+        "command": "editor.action.moveCarretLeftAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        //unbind new file
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
+        // "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        // go to definition
+        "key": "ctrl+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    // in file explorer ctrl+arrow up and down browse through files with multiple jumps
+    {
+        //unbind
+        "key": "ctrl+up",
+        "command": "-list.scrollUp",
+        "when": "listFocus && !inputFocus && listScrollAtBoundary != 'both' && listScrollAtBoundary != 'top'"
+    },
+    {
+        //unbind
+        "key": "ctrl+down",
+        "command": "-list.scrollDown",
+        "when": "listFocus && !inputFocus && listScrollAtBoundary != 'both' && listScrollAtBoundary != 'bottom'"
+    },
+    //   {
+    //     "key": "down",
+    //     "command": "list.focusDown",
+    //     "when": "listFocus && !inputFocus"
+    //   },
+    {
+        "key": "ctrl+down",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "list.focusDown",
+                "list.focusDown",
+                "list.focusDown",
+                "list.focusDown",
+                "list.focusDown"
+            ]
+        },
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "list.focusUp",
+                "list.focusUp",
+                "list.focusUp",
+                "list.focusUp",
+                "list.focusUp"
+            ]
+        },
+        "when": "listFocus && !inputFocus"
+    },
+
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        //new fuzzy finder
+        "key": "ctrl+tab",
+        "command": "workbench.action.showAllEditors"
+    },
+
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-list.selectAll",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+    }
+
+    // {
+    //     //unbind
+    //     "key": "ctrl+k ctrl+p",
+    //     "command": "-workbench.action.showAllEditors"
+    // },
+]

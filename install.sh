@@ -9,8 +9,9 @@ ln -s "$DOTFILES_DIR/.config/nvim" ~/.config/
 ln -s "$DOTFILES_DIR/.config/autostart" ~/.config/
 # polybar
 ln -s "$DOTFILES_DIR/.config/polybar" ~/.config/
-
-
+# vscode
+ln -s "$DOTFILES_DIR/.config/vscode/keybindings.json" ~/.config/Code/User/keybindings.json
+ln -s "$DOTFILES_DIR/.config/vscode/settings.json" ~/.config/Code/User/settings.json
 
 
 

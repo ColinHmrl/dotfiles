@@ -1,0 +1,125 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true
+    },
+    "workbench.tree.indent": 25,
+    "remote.SSH.remotePlatform": {
+        "viper": "linux"
+    },
+    // "[python]": {
+    //     "editor.formatOnType": true
+    // },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    // "git.enableSmartCommit": true,
+    // "git.suggestSmartCommit": true,
+    // "notebook.output.textLineLimit": 100,
+    // "files.exclude": {
+    //     "**/.git": false
+    // },
+    "terminal.integrated.scrollback": 1000,
+    // "remote.SSH.configFile": "C:\\Users\\2059938\\.ssh\\config",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // "editor.language.colorizedBracketPairs": [],
+    "editor.bracketPairColorization.enabled": false,
+    // "colorize.languages": ["javascript", "typescript"],
+    // "terminal.integrated.profiles.windows": {
+    //     "PowerShell": {
+    //         "source": "PowerShell",
+    //         "icon": "terminal-powershell"
+    //     },
+    //     "Command Prompt": {
+    //         "path": [
+    //             "${env:windir}\\Sysnative\\cmd.exe",
+    //             "${env:windir}\\System32\\cmd.exe"
+    //         ],
+    //         "args": [],
+    //         "icon": "terminal-cmd"
+    //     },
+    //     "Git Bash": {
+    //         "source": "Git Bash"
+    //     },
+    //     "Ubuntu-20.04 (WSL)": {
+    //         "path": "C:\\Windows\\System32\\wsl.exe",
+    //         "args": ["-d", "Ubuntu-20.04"]
+    //     }
+    // },
+    // "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    // "terminal.integrated.defaultProfile.linux": "bash",
+    // "terminal.integrated.cwd": "${workspaceFolder}",
+    // "gitlens.gitCommands.skipConfirmations": [
+    //     "fetch:command",
+    //     "stash-push:command",
+    //     "switch:command",
+    //     "branch-create:command"
+    // ],
+    // "gitlens.ai.experimental.openai.model": "gpt-3.5-turbo-16k",
+    "workbench.colorCustomizations": {
+        "activityBar.foreground": "#40826D",
+        "activityBar.toggledBackground": "#40826D",
+        "activityBar.activeBorder": "#40826D",
+        "activityBarBadge.background": "#40826D",
+        "button.background": "#40826D",
+        "tab.activeBorderTop": "#40826D",
+        "sideBar.dropBackground": "#40826D",
+        "list.activeSelectionBackground": "#0b3025",
+        "list.focusOutline": "#40826D",
+        "terminal.selectionBackground": "#0b3025",
+        "terminal.tab.activeBorder": "#40826D"
+    },
+    // "jupyter.interactiveWindow.creationMode": "perFile",
+    // "redhat.telemetry.enabled": false,
+    // "notebook.cellToolbarLocation": {
+    //     "default": "right",
+    //     "jupyter-notebook": "left"
+    // },
+    "prettier.tabWidth": 4,
+    // "prettier.semi": false,
+    // "prettier.singleQuote": false,
+    "prettier.useTabs": false,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "[dockercompose]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    // "editor.indentSize": "tabSize",
+    // "editor.tabSize": 4,
+    "git.confirmSync": false,
+    "editor.cursorSurroundingLines": 100,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js, ${capture}.typegen.ts",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts, ${capture}.typegen.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+        "*.mts": "${capture}.typegen.ts",
+        "*.cts": "${capture}.typegen.ts"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 1
+}
