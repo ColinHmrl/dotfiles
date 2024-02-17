@@ -20,9 +20,9 @@
     // "git.enableSmartCommit": true,
     // "git.suggestSmartCommit": true,
     // "notebook.output.textLineLimit": 100,
-    // "files.exclude": {
-    //     "**/.git": false
-    // },
+    "files.exclude": {
+        "**/.git": false
+    },
     "terminal.integrated.scrollback": 1000,
     // "remote.SSH.configFile": "C:\\Users\\2059938\\.ssh\\config",
     "typescript.updateImportsOnFileMove.enabled": "always",
